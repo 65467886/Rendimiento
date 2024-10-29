@@ -137,17 +137,31 @@ async def read_root():
     return HTMLResponse(content=html_content, status_code=200)
 ```
 
-## 3. Instrucciones de Uso
+## 3. Crear y Ejecutar un Entorno Virtual
 
 1. Asegúrate de tener Python instalado en tu máquina.
-2. Instala las dependencias necesarias ejecutando:
+2. Abre una terminal y navega al directorio donde quieres crear tu proyecto.
+3. Crea un entorno virtual ejecutando el siguiente comando:
+   ```bash
+   python -m venv env
+   ```
+4. Activa el entorno virtual:
+   - En **Windows**:
+     ```bash
+     .\env\Scriptsctivate
+     ```
+   - En **macOS y Linux**:
+     ```bash
+     source env/bin/activate
+     ```
+5. Instala las dependencias necesarias ejecutando:
    ```bash
    pip install fastapi uvicorn psutil
    ```
-3. Guarda el código HTML en un archivo llamado `index.html` y el código Python en `main.py`.
-4. Ejecuta la aplicación FastAPI con el siguiente comando:
+6. Guarda el código HTML en un archivo llamado `index.html` y el código Python en `main.py`.
+7. Ejecuta la aplicación FastAPI con el siguiente comando:
    ```bash
    uvicorn main:app --reload
    ```
-5. Abre tu navegador y dirígete a `http://127.0.0.1:8000` para ver la interfaz de monitoreo.
+8. Abre tu navegador y dirígete a `http://127.0.0.1:8000` para ver la interfaz de monitoreo.
 
