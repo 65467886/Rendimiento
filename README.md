@@ -148,7 +148,7 @@ async def read_root():
 4. Activa el entorno virtual:
    - En **Windows**:
      ```bash
-     .\env\Scriptsctivate
+     .\env\Scripts\Activate
      ```
    - En **macOS y Linux**:
      ```bash
